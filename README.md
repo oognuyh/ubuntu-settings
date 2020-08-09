@@ -48,7 +48,10 @@ Add a section for intel graphics.
     ```
 
 # gnome tweak  
-
+  ```
+  sudo apt install gnome-tweak-tool
+  ```
+  
 # Development Tools  
   + Visual Studio Code
     ```
