@@ -96,5 +96,14 @@ Add a section for intel graphics.
   + kakaotalk
   + hwp
   + microsoft office
+  
+# Timezone
+  ```
+  timedatectl set-local-rtc 1
+  ```
+  Open /etc/default/rcS so taht the changes can take effect after rebooting.
+  ```
+  UTC=no
+  ```
 
 # Bluetooth
