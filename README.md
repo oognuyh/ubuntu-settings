@@ -101,7 +101,7 @@ Add a section for intel graphics.
   ```
   timedatectl set-local-rtc 1
   ```
-  Open /etc/default/rcS so taht the changes can take effect after rebooting.
+  Open /etc/default/rcS and add "UTC=no" so that the changes can take effect after rebooting.
   ```
   UTC=no
   ```
