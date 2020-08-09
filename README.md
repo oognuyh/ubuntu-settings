@@ -10,7 +10,7 @@ sudo apt-get upgrade && sudo apt-get update
 
 - - - - - - - - - - - - - - - - - 
 # NVIDIA Graphic Driver
-installing NVIDIA DRiver using "Software & updates" app.
+Installing NVIDIA DRiver using "Software & updates" app.
   ```
   sudo nvidia-xconfig --prime 
   ```
@@ -42,7 +42,7 @@ Add a section for intel graphics.
   
 # GRUB Theme  
   * matter grub theme download link : [grub-theme-matter](https://github.com/mateosss/matter#download)
-  * install grub-customizer
+  * Install grub-customizer
     ```
     sudo apt-get install grub-customizer
     ```
@@ -52,10 +52,15 @@ Add a section for intel graphics.
 # Development Tools  
   + Visual Studio Code
     ```
+    sudo snap install --classic code
     ```
     
   + Android Studio
     ```
+    sudo apt install openjdk-11-jdk
+    sudo add-apt-repository ppa:maarten-fonville/android-studio
+    sudo apt update
+    sudo apt install android-studio
     ```
     
   + Ananconda
@@ -88,5 +93,5 @@ Add a section for intel graphics.
   + kakaotalk
   + hwp
   + microsoft office
-  
+
 # Bluetooth
