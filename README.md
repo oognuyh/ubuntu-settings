@@ -60,10 +60,8 @@ Add a section for intel graphics.
     
   + Android Studio
     ```
-    sudo apt install openjdk-11-jdk
-    sudo add-apt-repository ppa:maarten-fonville/android-studio
-    sudo apt update
-    sudo apt install android-studio
+    sudo apt install default-jdk
+    sudo snap install android-studio --classic
     ```
     
   + Ananconda
@@ -73,11 +71,7 @@ Add a section for intel graphics.
   + Go
     ```
     ```
-    
-  + Java
-    ```
-    ```
-    
+        
   + Kotlin 
     ```
     ```
