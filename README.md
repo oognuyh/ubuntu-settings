@@ -52,6 +52,10 @@ Add a section for intel graphics.
     ```
     tar -xf Ant-Nebula.tar -C /usr/share/themes
     ```
+  * Full icon theme download link : [Sweet-folders](https://www.opendesktop.org/p/1284047)
+    ```
+    tar -xf Sweet-Red-Filled-tar.xz -C /usr/share/icons
+    ```
     
 # gnome tweak  
   ```
