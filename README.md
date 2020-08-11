@@ -111,3 +111,12 @@ Add a section for intel graphics.
   ```
 
 # Bluetooth
+
+# Reboot to Windows 
+  Add a function in your ~/.bashrc 
+  ```
+  rebootw {
+    windows_title = $(grep -i windows /boot/grub/grub.cfg | cut -d "'" -f 2)
+    sudo grub-reboot "$windows_title" && sudo reboot
+  }
+  ```
