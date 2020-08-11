@@ -52,9 +52,9 @@ Add a section for intel graphics.
     ```
     tar -xf Ant-Nebula.tar -C /usr/share/themes
     ```
-  * Full icon theme download link : [Sweet-folders](https://www.opendesktop.org/p/1284047)
+  * Full icon theme download link : [Qogir-icon-theme](https://www.gnome-look.org/p/1296407/)
     ```
-    tar -xf Sweet-Red-Filled-tar.xz -C /usr/share/icons
+    tar -xf Qoir-icon-theme.tar.xz -C /usr/share/icons
     ```
     
 # gnome tweak  
@@ -115,8 +115,8 @@ Add a section for intel graphics.
 # Reboot to Windows 
   Add a function in your ~/.bashrc 
   ```
-  rebootw {
-    windows_title = $(grep -i windows /boot/grub/grub.cfg | cut -d "'" -f 2)
-    sudo grub-reboot "$windows_title" && sudo reboot
+  rebootw() {
+    WINDOWS_TITLE=$(grep -i windows /boot/grub/grub.cfg | cut -d "'" -f 2)
+    sudo grub-reboot "$WINDOWS_TITLE" && sudo reboot
   }
   ```
