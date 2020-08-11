@@ -41,12 +41,18 @@ Add a section for intel graphics.
 * Reference : [Setting Up an eGPU on Ubuntu](https://medium.com/@mattkubilus/setting-up-an-egpu-on-ubuntu-c87d4c04cea4)
   
 # GRUB Theme  
-  * matter grub theme download link : [grub-theme-matter](https://github.com/mateosss/matter#download)
+  * matter grub theme download link : [matter-theme](https://github.com/mateosss/matter#download)
   * Install grub-customizer
     ```
     sudo apt-get install grub-customizer
     ```
 
+# GTK3 Theme
+  * ant nebula theme download link : [ant-nebula-theme](https://www.gnome-look.org/p/1099856/)
+    ```
+    tar -xf Ant-Nebula.tar -C /usr/share/themes
+    ```
+    
 # gnome tweak  
   ```
   sudo apt install gnome-tweak-tool
