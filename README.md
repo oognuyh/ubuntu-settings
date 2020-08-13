@@ -75,7 +75,10 @@ Add a section for intel graphics.
     ```
     
   + Ananconda
+    copy the latest version link from [Anaconda](https://www.anaconda.com/products/individual)
     ```
+    wget 'link'
+    bash 'installed.sh'
     ```
     
   + Go
@@ -95,7 +98,13 @@ Add a section for intel graphics.
   ```
   
 # TLP
-
+  ```
+  sudo add-apt-repository ppa:linrunner/tlp
+  sudo apt-get update
+  sudo apt-get install tlp tlp-rdw
+  sudo tlp start
+  ```
+  
 # Wine 
   + kakaotalk
   + hwp
