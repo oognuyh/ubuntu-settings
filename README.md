@@ -74,7 +74,7 @@ Add a section for intel graphics.
     sudo snap install android-studio --classic
     ```
     
-  + Ananconda
+  + Ananconda  
     copy the latest version link from [Anaconda](https://www.anaconda.com/products/individual)
     ```
     wget 'link'
