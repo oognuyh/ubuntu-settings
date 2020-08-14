@@ -127,27 +127,27 @@ Add a section for intel graphics.
 1. Pair all devices with Ubuntu and then pair Windows  
 2. Copy Windows paring keys   
 3. Change info in Ubutnu  
-  + Pairing key only  
-    ```
-    sudo vim /var/lib/bluetooth/'receiver MAC address'/'device MAC address'/info
-    ```
-    change 'Key' in 'LineKey' to copied key to upper case after removing seperator  
+    + Pairing key only  
+      ```
+      sudo vim /var/lib/bluetooth/'receiver MAC address'/'device MAC address'/info
+      ```
+      change 'Key' in 'LineKey' to copied key to upper case after removing seperator  
   
-  + BLE with Public/Static Address  
-    ```
-    mv /var/lib/bluetooth/'receiver MAC address'/'device MAC address' /var/lib/bluetooth/'receiver MAC address'/'the latest Static(Random) address'
-    ```
-    change 'Key' in 'LongTermKey' to copied LTK,   
-    'Rand' in 'LongTermKey' to copied ERand to decimal after flipping over,  
-    'EDiv' in 'LongTermKey' to copied EDIV to decimal,  
-    'Key' in 'IdentityResolvingKey'to copied IRK  
+    + BLE with Public/Static Address  
+      ```
+      mv /var/lib/bluetooth/'receiver MAC address'/'device MAC address' /var/lib/bluetooth/'receiver MAC address'/'the latest Static(Random) address'
+      ```
+      change 'Key' in 'LongTermKey' to copied LTK,   
+      'Rand' in 'LongTermKey' to copied ERand to decimal after flipping over,  
+      'EDiv' in 'LongTermKey' to copied EDIV to decimal,  
+      'Key' in 'IdentityResolvingKey'to copied IRK  
     
-  + BLE with CSRK  
-    ```
-    sudo vim /var/lib/bluetooth/'receiver MAC address'/'device MAC address'/info
-    ```
-    change 'Key' in 'LocalSignatureKey' to copied CSRK,  
-    'Counter' in 'LocalSignatureKey' to copied OutboundSignCounter  
+    + BLE with CSRK  
+      ```
+      sudo vim /var/lib/bluetooth/'receiver MAC address'/'device MAC address'/info
+      ```
+      change 'Key' in 'LocalSignatureKey' to copied CSRK,  
+      'Counter' in 'LocalSignatureKey' to copied OutboundSignCounter  
     
 4. restart the bluetooth service
   ```
