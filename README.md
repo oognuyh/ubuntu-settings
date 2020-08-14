@@ -154,7 +154,7 @@ Add a section for intel graphics.
   sudo systemctl restart bluetooth
   ```
   
-* Reference : (multiboot-sharing-bluetooth)[https://nounique.github.io/development/multiboot-sharing-bluetooth/]  
+* Reference : [multiboot-sharing-bluetooth](https://nounique.github.io/development/multiboot-sharing-bluetooth/)  
 
 # Youtube Music
   ```
