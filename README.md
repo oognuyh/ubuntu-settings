@@ -67,13 +67,7 @@ Add a section for intel graphics.
     ```
     sudo snap install --classic code
     ```
-    
-  + Android Studio
-    ```
-    sudo apt install default-jdk
-    sudo snap install android-studio --classic
-    ```
-    
+   
   + Ananconda  
     copy the latest version link from [Anaconda](https://www.anaconda.com/products/individual)
     ```
@@ -81,15 +75,25 @@ Add a section for intel graphics.
     bash 'installed.sh'
     ```
     
-  + Go
+  + Android Studio
     ```
+    sudo apt install default-jdk
+    sudo snap install android-studio --classic
     ```
-        
+    
   + Kotlin 
     ```
+    sudo snap install kotlin --classic
     ```
+   
+  + Go
+    ```
+    sudo snap install go --classic
+    ```
+          
   + Git
     ```
+    sudo apt install git
     ```
     
 # UIM 
@@ -119,7 +123,43 @@ Add a section for intel graphics.
   UTC=no
   ```
 
-# Bluetooth
+# Bluetooth  
+1. Pair all devices with Ubuntu and then pair Windows  
+2. Copy Windows paring keys   
+3. Change info in Ubutnu  
+  + Pairing key only  
+    ```
+    sudo vim /var/lib/bluetooth/'receiver MAC address'/'device MAC address'/info
+    ```
+    change 'Key' in 'LineKey' to copied key to upper case after removing seperator
+  
+  + BLE with Public/Static Address  
+    ```
+    mv /var/lib/bluetooth/'receiver MAC address'/'device MAC address' /var/lib/bluetooth/'receiver MAC address'/'the latest Static(Random) address'
+    ```
+    change 'Key' in 'LongTermKey' to copied LTK,  
+    'Rand' in 'LongTermKey' to copied ERand to decimal after flipping over,
+    'EDiv' in 'LongTermKey' to copied EDIV to decimal,
+    'Key' in 'IdentityResolvingKey'to copied IRK
+    
+  + BLE with CSRK  
+    ```
+    sudo vim /var/lib/bluetooth/'receiver MAC address'/'device MAC address'/info
+    ```
+    change 'Key' in 'LocalSignatureKey' to copied CSRK,  
+    'Counter' in 'LocalSignatureKey' to copied OutboundSignCounter
+    
+4. restart the bluetooth service
+  ```
+  sudo systemctl restart bluetooth
+  ```
+  
+* Reference : (multiboot-sharing-bluetooth)[https://nounique.github.io/development/multiboot-sharing-bluetooth/]
+
+# Youtube Music
+  ```
+  sudo snap install youtube-music-desktop-app
+  ```
 
 # Reboot to Windows 
   Add a function in your ~/.bashrc 
