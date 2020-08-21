@@ -161,6 +161,11 @@ Add a section for intel graphics.
   sudo snap install youtube-music-desktop-app
   ```
 
+# Mailspring
+  ```
+  sudo snap install mailspring
+  ```
+
 # Reboot to Windows 
   Add a function in your ~/.bashrc 
   ```
