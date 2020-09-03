@@ -69,11 +69,21 @@ Add a section for intel graphics.
     tar -xf Qoir-icon-theme.tar.xz -C /usr/share/icons
     ```
     
-# gnome tweak  
+# Gnome Tweak  
   ```
   sudo apt install gnome-tweak-tool
   ```
+  * [Dash to dock](https://extensions.gnome.org/extension/307/dash-to-dock/)  
   
+  * [Good bye gdm3 login screen to desktop for gnome-shell 3.36 only!](https://extensions.gnome.org/extension/3037/good-bye-gdm-flick/)  
+
+# GDM3 Background
+  ```
+  wget github.com/thiggy01/ubuntu-20.04-change-gdm-background/raw/master/ubuntu-20.04-change-gdm-background
+  chmod +x ubuntu-20.04-change-gdm-background
+  sudo ./ubuntu-20.04-change-gdm-background /path/to/image
+  ```
+
 # Development Tools  
   + Visual Studio Code
     ```
