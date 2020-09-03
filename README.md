@@ -40,8 +40,20 @@ Add a section for intel graphics.
   ```  
 * Reference : [Setting Up an eGPU on Ubuntu](https://medium.com/@mattkubilus/setting-up-an-egpu-on-ubuntu-c87d4c04cea4)
   
+# Chrome
+  ```
+  wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+  sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+  sudo apt-get update
+  sudo apt-get install google-chrome-stable
+  sudo rm -rf /etc/apt/sources.list.d/google.list
+  ```
+
 # GRUB Theme  
   * matter grub theme download link : [matter-theme](https://github.com/mateosss/matter#download)
+    ```
+    ./matter.py -i ubuntu microsoft-windows cog -ff font location -fn font name -fs font size
+    ```
   * Install grub-customizer
     ```
     sudo apt-get install grub-customizer
