@@ -76,6 +76,8 @@ Add a section for intel graphics.
   * [Dash to dock](https://extensions.gnome.org/extension/307/dash-to-dock/)  
   
   * [Good bye gdm3 login screen to desktop for gnome-shell 3.36 only!](https://extensions.gnome.org/extension/3037/good-bye-gdm-flick/)  
+  
+  * [TopIcons Plus](https://extensions.gnome.org/extension/1031/topicons/)  
 
 # GDM3 Background
   ```
