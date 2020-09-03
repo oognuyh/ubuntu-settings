@@ -79,6 +79,7 @@ Add a section for intel graphics.
 
 # GDM3 Background
   ```
+  sudo apt install libglib2.0-dev-bin
   wget github.com/thiggy01/ubuntu-20.04-change-gdm-background/raw/master/ubuntu-20.04-change-gdm-background
   chmod +x ubuntu-20.04-change-gdm-background
   sudo ./ubuntu-20.04-change-gdm-background /path/to/image
@@ -87,7 +88,7 @@ Add a section for intel graphics.
 # Development Tools  
   + Visual Studio Code
     ```
-    sudo snap install --classic code
+    sudo snap install code --classic 
     ```
    
   + Ananconda  
