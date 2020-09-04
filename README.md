@@ -135,7 +135,7 @@ Add a section for intel graphics.
   ```
   
 # Wine 
-  + kakaotalk
+  + [kakaotalk](https://tolovefeels.tistory.com/65)
   + hwp
   + microsoft office
   
